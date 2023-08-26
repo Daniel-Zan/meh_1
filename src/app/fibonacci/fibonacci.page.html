@@ -1,0 +1,15 @@
+<ion-header [translucent]="true"><ion-toolbar><ion-title>fibonacci</ion-title></ion-toolbar></ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Pon un número para Fibonacci:</ion-label>
+    <ion-input type="number" [(ngModel)]="FibonacciSalto"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="calcularFibonacci()">Calcular el Fibonacci</ion-button>
+
+  <div *ngIf="resultadoFibonacci">
+    <h3>Fibonacci:</h3>
+    <p>{{ resultadoFibonacci }}</p>
+  </div>
+</ion-content>
+

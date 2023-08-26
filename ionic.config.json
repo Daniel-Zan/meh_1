@@ -1,0 +1,7 @@
+{
+  "name": "Tarea_Sabado",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

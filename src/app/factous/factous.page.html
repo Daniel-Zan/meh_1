@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calcular Factorial
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Pon un número</ion-label>
+    <ion-input [(ngModel)]="numero" type="number"></ion-input>
+  </ion-item>
+  <ion-button (click)="calcularFactorial()">Calcular factous</ion-button>
+  <ion-item>
+    <ion-label>El Factorial es :</ion-label>
+    <ion-text>{{ resultadoFactorial }}</ion-text>
+  </ion-item>
+</ion-content>

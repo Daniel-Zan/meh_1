@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Número para sacar los primos menores que:</ion-label>
+    <ion-input [(ngModel)]="numero" type="number"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="calcularPrimos()">Calcular Números Primos</ion-button>
+</ion-content>
+<ion-list *ngIf="primos.length > 0">
+  <ion-item *ngFor="let primo of primos">
+    Número Primo: {{ primo }}
+  </ion-item>
+</ion-list>

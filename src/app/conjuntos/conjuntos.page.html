@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Conjunto A (separa los números con comas):</ion-label>
+    <ion-input [(ngModel)]="conjuntoA" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Conjunto B (separa los números con comas):</ion-label>
+    <ion-input [(ngModel)]="conjuntoB" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Operación:</ion-label>
+    <ion-select [(ngModel)]="operacion">
+      <ion-select-option value="interseccion">Intersección (A∩B)</ion-select-option>
+      <ion-select-option value="union">Unión (A∪B)</ion-select-option>
+      <ion-select-option value="aNoPerteneceAB">A no pertenece a B</ion-select-option>
+      <ion-select-option value="bNoPerteneceAA">B no pertenece a A</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="full" (click)="realizarOperacion()">Calcular</ion-button>
+
+</ion-content>
